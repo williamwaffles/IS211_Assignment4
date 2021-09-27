@@ -91,7 +91,7 @@ if __name__ == "__main__":
             total_time_sequential += run_time
             avg_run_time = total_time_sequential / 100
         print(f'The Sequential Search took an average of{avg_run_time:10.7f}s to search list size {list_size}!')
-    print(f'Total Sequential Search run time: {total_time_sequential:10.7f}')
+    print(f'Total Sequential Search run time: {total_time_sequential:10.7f}s')
 
     # Time check for the Ordered Sequential Search Function
     total_time_ordered = 0
@@ -106,7 +106,7 @@ if __name__ == "__main__":
             total_time_ordered += run_time
             avg_run_time = total_time_ordered / 100
         print(f'The Ordered Sequential Search took an average of{avg_run_time:10.7f}s to search list size {list_size}!')
-    print(f'Total Ordered Sequential Search run time: {total_time_ordered:10.7f}')
+    print(f'Total Ordered Sequential Search run time: {total_time_ordered:10.7f}s')
 
     # Time check for the Iterative Binary Search
     total_time_iterative = 0
@@ -121,7 +121,7 @@ if __name__ == "__main__":
             total_time_iterative += run_time
             avg_run_time = total_time_iterative / 100
         print(f'The Iterative Binary search took an average of{avg_run_time:10.7f}s to search list size {list_size}!')
-    print(f'Total Iterative Binary Search run time: {total_time_iterative:10.7f}')
+    print(f'Total Iterative Binary Search run time: {total_time_iterative:10.7f}s')
 
     # Time check for the Recursive Binary Search
     total_time_recursive = 0
@@ -136,4 +136,4 @@ if __name__ == "__main__":
             total_time_recursive += run_time
             avg_run_time = total_time_recursive / 100
         print(f'The Recursive Binary Search took an average of{avg_run_time:10.7f}s to search list size {list_size}!')
-    print(f'Total Recursive Binary Search run time: {total_time_recursive:10.7f}')
+    print(f'Total Recursive Binary Search run time: {total_time_recursive:10.7f}s')
