@@ -70,20 +70,20 @@ def python_sort(a_list): # Python's built-in sort function
 if __name__ == "__main__":
     """Main entry point"""
 
-    lists =  [500, 1000, 2500]
+    lists =  [500, 1000, 2500] # list sizes
 
     for list_size in lists:
-        insertion_sort_time = 0.0
+        insertion_sort_time = 0.0 # time initializations
         shell_sort_time = 0.0
         python_sort_time = 0.0
         for i in range(0, 100):
             a_list = []
             for i in range(1, list_size):
                 a_list.append(random.randint(1, 100))
-            insertion_sort_time += insertion_sort(a_list)
+            insertion_sort_time += insertion_sort(a_list) # time additions
             shell_sort_time += shell_sort(a_list)
             python_sort_time += python_sort(a_list)
-        insertion_sort_avg = insertion_sort_time / 100
+        insertion_sort_avg = insertion_sort_time / 100 # time averages
         shell_sort_avg = shell_sort_time / 100
         python_sort_avg = python_sort_time / 100
         print(f'Insertion Sort took an average of{insertion_sort_avg:10.7f}s to sort list size {list_size}!')
